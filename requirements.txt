@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-ollama
+langchain-pinecone
+langchain-tavily
+langchain-text-splitters
+langchain-community
+streamlit
+python-dotenv
+certifi

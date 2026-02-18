@@ -15,7 +15,7 @@ embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 vectorsstore = PineconeVectorStore(embedding=embeddings, index_name=os.environ['INDEX_NAME'])
 
-model = ChatOllama(model="mistral:latest", temperature=0)
+model = ChatOllama(model="Mistral", temperature=0)
 
 @tool(response_format = "content_and_artifact")
 
@@ -74,4 +74,3 @@ def run_llm(query: str) -> Dict[str, Any]:
         "context": context_docs
     }
     
-
